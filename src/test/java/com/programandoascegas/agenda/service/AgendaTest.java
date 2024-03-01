@@ -16,7 +16,7 @@ class AgendaTest {
     }
 
     @Test
-    @DisplayName("Testar a adição de um contato na lista")
+    @DisplayName("Testar a adição de um contato na lista tamanho deve ser igual a 1")
     void adicionar() {
         String nome = "Matheus";
         String telefone = "999887765";
@@ -29,7 +29,7 @@ class AgendaTest {
     }
 
     @Test
-    @DisplayName("Testando a exclusão do contato")
+    @DisplayName("Testando a exclusão do contato deve retornar true")
     void excluir() {
         String nome = "Matheus";
         String telefone = "999887765";
@@ -45,7 +45,7 @@ class AgendaTest {
     }
 
     @Test
-    @DisplayName("Testando a exclusão de um contato passando uma posição inválida")
+    @DisplayName("Testando a exclusão de um contato passando uma posição inválida deve retornar false")
     void excluirPosicaoInvalida() {
         String nome = "Matheus";
         String telefone = "999887765";
